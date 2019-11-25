@@ -40,9 +40,11 @@ vehicles = [
 
 # TODO
 vehicles = [
-    GroundVehicle(),  # "vroooom"
-    GroundVehicle(),  # "vroooom"
-    Motorcycle(),  # "BRAAAP!!"
-    GroundVehicle(),  # "vroooom"
-    Motorcycle(),  # "BRAAAP!!"
+    GroundVehicle("Tank"),  # "vroooom"
+    GroundVehicle("Truck"),  # "vroooom"
+    Motorcycle("Vespa"),  # "BRAAAP!!"
+    GroundVehicle("Tractor"),  # "vroooom"
+    Motorcycle("Ducati"),  # "BRAAAP!!"
 ]
+for vehicle in vehicles:
+    print(vehicle.drive())
